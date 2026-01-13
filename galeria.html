@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Casas de Brinco</title>
+    <meta name="description" content="Galería completa de casas de brinco e inflables disponibles para alquiler. Fotos de alta calidad de nuestros productos.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-home"></i>
+                    <span>Casas de Brinco</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#galeria" class="active">Galería</a></li>
+                    <li><a href="#precios">Precios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Galería -->
+    <section class="hero-galeria">
+        <div class="container">
+            <h1>Nuestra Galería</h1>
+            <p>Descubre todos nuestros juegos inflables y casas de brinco disponibles para tu evento.</p>
+        </div>
+    </section>
+
+    <!-- Filtros -->
+    <section class="filtros-section">
+        <div class="container">
+            <div class="filtros">
+                <button class="filtro-btn active" data-filter="todos">Todos</button>
+                <button class="filtro-btn" data-filter="casas">Casas de Brinco</button>
+                <button class="filtro-btn" data-filter="castillos">Castillos</button>
+                <button class="filtro-btn" data-filter="tobogan">Toboganes</button>
+                <button class="filtro-btn" data-filter="juegos">Juegos Combinados</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería Completa -->
+    <section class="galeria-completa">
+        <div class="container">
+            <div class="galeria-grid" id="galeriaGrid">
+                <!-- Casas de Brinco -->
+                <div class="galeria-item casas">
+                    <img src="../images/casa-brinco-1.jpg" alt="Casa de brinco grande azul" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjNGNEY2Ii8+Cjx0ZXh0IHg9IjIwMCIgeT0iMTUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOUI5QkE0IiBmb250LXNpemU9IjE4IiBmb250LWZhbWlseT0iQXJpYWwiPkNhc2EgZGUgQnJpbmNvPC90ZXh0Pgo8L3N2Zz4='">
+                    <div class="galeria-overlay">
+                        <h4>Casa de Brinco Grande</h4>
+                        <p>Hasta 8 niños • 4x4 metros</p>
+                        <span class="precio-tag">$25.000/día</span>
+                    </div>
+                </div>
+
+                <div class="galeria-item casas">
+                    <img src="../images/casa-brinco-2.jpg" alt="Casa de brinco mediana roja" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjNGNEY2Ii8+Cjx0ZXh0IHg9IjIwMCIgeT0iMTUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOUI5QkE0IiBmb250LXNpemU9IjE4IiBmb250LWZhbWlseT0iQXJpYWwiPkNhc2EgTWVkaWFuYTwvdGV4dD4KPC9zdmc+'">
+                    <div class="galeria-overlay">
+                        <h4>Casa de Brinco Mediana</h4>
+                        <p>Hasta 6 niños • 3x3 metros</p>
+                        <span class="precio-tag">$20.000/día</span>
+                    </div>
+                </div>
+
+                <div class="galeria-item casas">
+                    <img src="../images/casa-brinco-3.jpg" alt="Casa de brinco pequeña amarilla" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjNGNEY2Ii8+Cjx0ZXh0IHg9IjIwMCIgeT0iMTUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOUI5QkE0IiBmb250LXNpemU9IjE4IiBmb250LWZhbWlseT0iQXJpYWwiPkNhc2EgUGVxdWVuw7FhPC90ZXh0Pgo8L3N2Zz4='">
+                    <div class="galeria-overlay">
+                        <h4>Casa de Brinco Pequeña</h4>
+                        <p>Hasta 4 niños • 2.5x2.5 metros</p>
+                        <span class="precio-tag">$15.000/día</span>
+                    </div>
+                </div>
+
+                <!-- Castillos -->
+                <div class="galeria-item castillos">
+                    <img src="../images/castillo-inflable.jpg" alt="Castillo inflable grande" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjNGNEY2Ii8+Cjx0ZXh0IHg9IjIwMCIgeT0iMTUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOUI5QkE0IiBmb250LXNpemU9IjE4IiBmb250LWZhbWlseT0iQXJpYWwiPkNhc3RpbGxvIEluZmxhYmxlPC90ZXh0Pgo8L3N2Zz4='">
+                    <div class="galeria-overlay">
+                        <h4>Castillo Inflable Deluxe</h4>
+                        <p>4 niveles • Múltiples toboganes</p>
+                        <span class="precio-tag">$30.000/día</span>
+                    </div>
+                </div>
+
+                <div class="galeria-item castillos">
+                    <img src="../images/castillo-2.jpg" alt="Castillo inflable mediano" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjNGNEY2Ii8+Cjx0ZXh0IHg9IjIwMCIgeT0iMTUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOUI5QkE0IiBmb250LXNpemU9IjE4IiBmb250LWZhbWlseT0iQXJpYWwiPkNhc3RpbGxvIE1lZGlhbm88L3RleHQ+Cjwvc3ZnPg=='">
+                    <div class="galeria-overlay">
+                        <h4>Castillo Inflable Familiar</h4>
+                        <p>3 niveles • Tobogán incluido</p>
+                        <span class="precio-tag">$25.000/día</span>
+                    </div>
+                </div>
+
+                <!-- Toboganes -->
+                <div class="galeria-item tobogan">
+                    <img src="../images/tobogan-inflable.jpg" alt="Tobogán inflable grande" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjNGNEY2Ii8+Cjx0ZXh0IHg9IjIwMCIgeT0iMTUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOUI5QkE0IiBmb250LXNpemU9IjE4IiBmb250LWZhbWlseT0iQXJpYWwiPlRvYm9nw6FuIEdyYW5kZTwvdGV4dD4KPC9zdmc+'">
+                    <div class="galeria-overlay">
+                        <h4>Tobogán Grande</h4>
+                        <p>6 metros de altura • Seguro y divertido</p>
+                        <span class="precio-tag">$18.000/día</span>
+                    </div>
+                </div>
+
+                <div class="galeria-item tobogan">
+                    <img src="../images/tobogan-2.jpg" alt="Tobogán inflable doble" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjNGNEY2Ii8+Cjx0ZXh0IHg9IjIwMCIgeT0iMTUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOUI5QkE0IiBmb250LXNpemU9IjE4IiBmb250LWZhbWlseT0iQXJpYWwiPlRvYm9nw6FuIERvYmxlPC90ZXh0Pgo8L3N2Zz4='">
+                    <div class="galeria-overlay">
+                        <h4>Tobogán Doble</h4>
+                        <p>2 pistas simultáneas</p>
+                        <span class="precio-tag">$22.000/día</span>
+                    </div>
+                </div>
+
+                <!-- Juegos Combinados -->
+                <div class="galeria-item juegos">
+                    <img src="../images/juego-combinado-1.jpg" alt="Casa + tobogán" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjNGNEY2Ii8+Cjx0ZXh0IHg9IjIwMCIgeT0iMTUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOUI5QkE0IiBmb250LXNpemU9IjE4IiBmb250LWZhbWlseT0iQXJpYWwiPkNvbWJpbmFkbyAxPC90ZXh0Pgo8L3N2Zz4='">
+                    <div class="galeria-overlay">
+                        <h4>Casa + Tobogán</h4>
+                        <p>Combinación perfecta para fiestas</p>
+                        <span class="precio-tag">$35.000/día</span>
+                    </div>
+                </div>
+
+                <div class="galeria-item juegos">
+                    <img src="../images/juego-combinado-2.jpg" alt="Castillo + obstáculos" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjNGNEY2Ii8+Cjx0ZXh0IHg9IjIwMCIgeT0iMTUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOUI5QkE0IiBmb250LXNpemU9IjE4IiBmb250LWZhbWlseT0iQXJpYWwiPkNvbWJpbmFkbyAyPC90ZXh0Pgo8L3N2Zz4='">
+                    <div class="galeria-overlay">
+                        <h4>Castillo + Obstáculos</h4>
+                        <p>Aventura completa</p>
+                        <span class="precio-tag">$40.000/día</span>
+                    </div>
+                </div>
+
+                <!-- Más productos -->
+                <div class="galeria-item casas">
+                    <img src="../images/casa-tematica.jpg" alt="Casa de brinco temática" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjNGNEY2Ii8+Cjx0ZXh0IHg9IjIwMCIgeT0iMTUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOUI5QkE0IiBmb250LXNpemU9IjE4IiBmb250LWZhbWlseT0iQXJpYWwiPkNhc2EgVGVtw6F0aWNhPC90ZXh0Pgo8L3N2Zz4='">
+                    <div class="galeria-overlay">
+                        <h4>Casa Temática</h4>
+                        <p>Diseños personalizados disponibles</p>
+                        <span class="precio-tag">Desde $30.000</span>
+                    </div>
+                </div>
+
+                <div class="galeria-item juegos">
+                    <img src="../images/paquete-completo.jpg" alt="Paquete completo fiesta" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjNGNEY2Ii8+Cjx0ZXh0IHg9IjIwMCIgeT0iMTUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOUI5QkE0IiBmb250LXNpemU9IjE4IiBmb250LWZhbWlseT0iQXJpYWwiPlBhcXVldGUgQ29tcGxldG88L3RleHQ+Cjwvc3ZnPg=='">
+                    <div class="galeria-overlay">
+                        <h4>Paquete Fiesta Completo</h4>
+                        <p>Todo lo que necesitas para una gran celebración</p>
+                        <span class="precio-tag">$50.000/día</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botón Ver Más -->
+            <div class="ver-mas-container">
+                <button id="verMasBtn" class="btn btn-primary btn-large">Ver Más Productos</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Características -->
+    <section class="caracteristicas-section">
+        <div class="container">
+            <h2>¿Por qué elegirnos?</h2>
+            <div class="caracteristicas-grid">
+                <div class="caracteristica">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Seguridad Certificada</h3>
+                    <p>Todos nuestros productos pasan inspecciones rigurosas y cumplen con las normas de seguridad.</p>
+                </div>
+                <div class="caracteristica">
+                    <i class="fas fa-truck"></i>
+                    <h3>Entrega Garantizada</h3>
+                    <p>Servicio de entrega y montaje profesional en toda la Región Metropolitana.</p>
+                </div>
+                <div class="caracteristica">
+                    <i class="fas fa-clock"></i>
+                    <h3>Puntualidad</h3>
+                    <p>Llegamos a tiempo y cumplimos con los horarios acordados.</p>
+                </div>
+                <div class="caracteristica">
+                    <i class="fas fa-user-friends"></i>
+                    <h3>Supervisión Profesional</h3>
+                    <p>Personal capacitado supervisa el uso de los juegos durante todo el alquiler.</p>
+                </div>
+                <div class="caracteristica">
+                    <i class="fas fa-tools"></i>
+                    <h3>Mantenimiento Constante</h3>
+                    <p>Equipo siempre limpio y en perfectas condiciones de funcionamiento.</p>
+                </div>
+                <div class="caracteristica">
+                    <i class="fas fa-heart"></i>
+                    <h3>Garantía de Diversión</h3>
+                    <p>Nos aseguramos de que tus hijos tengan el mejor momento de sus vidas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>¿Listo para reservar?</h2>
+            <p>Contactanos ahora y asegura la disponibilidad para tu evento.</p>
+            <div class="cta-buttons">
+                <a href="../pages/contacto.html" class="btn btn-primary btn-large">Reservar Ahora</a>
+                <a href="tel:+56912345678" class="btn btn-secondary btn-large">Llamar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-home"></i>
+                    <span>Casas de Brinco</span>
+                </div>
+                <div class="footer-links">
+                    <a href="../index.html">Inicio</a>
+                    <a href="#servicios">Servicios</a>
+                    <a href="#galeria">Galería</a>
+                    <a href="#precios">Precios</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Casas de Brinco. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/galeria.js"></script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Casas de Brinco</title>
+    <meta name="description" content="Contáctanos para reservar casas de brinco e inflables. Información, precios y disponibilidad.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-home"></i>
+                    <span>Casas de Brinco</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#precios">Precios</a></li>
+                    <li><a href="#contacto" class="active">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Contacto -->
+    <section class="hero-contacto">
+        <div class="container">
+            <h1>Contáctanos</h1>
+            <p>¿Listo para hacer que la fiesta de tus hijos sea inolvidable? Estamos aquí para ayudarte.</p>
+        </div>
+    </section>
+
+    <!-- Información de Contacto -->
+    <section class="contacto-info-section">
+        <div class="container">
+            <div class="contacto-grid">
+                <div class="contacto-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Teléfono</h3>
+                    <p>+56 9 1234 5678</p>
+                    <p>+56 9 8765 4321</p>
+                    <a href="tel:+56912345678" class="btn btn-primary">Llamar Ahora</a>
+                </div>
+                <div class="contacto-card">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>WhatsApp</h3>
+                    <p>Contactanos por WhatsApp para consultas rápidas</p>
+                    <p>+56 9 1234 5678</p>
+                    <a href="https://wa.me/56912345678" class="btn btn-success">Enviar Mensaje</a>
+                </div>
+                <div class="contacto-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>contacto@casasdebrinco.cl</p>
+                    <p>ventas@casasdebrinco.cl</p>
+                    <a href="mailto:contacto@casasdebrinco.cl" class="btn btn-secondary">Enviar Email</a>
+                </div>
+                <div class="contacto-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Ubicación</h3>
+                    <p>Santiago, Región Metropolitana</p>
+                    <p>Cobertura en toda la zona</p>
+                    <a href="#ubicacion" class="btn btn-secondary">Ver Mapa</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de Contacto -->
+    <section class="contacto-form-section">
+        <div class="container">
+            <div class="contacto-form-container">
+                <div class="form-info">
+                    <h2>Envíanos tu Consulta</h2>
+                    <p>Completa el formulario y te responderemos en menos de 24 horas.</p>
+                    <div class="form-benefits">
+                        <div class="benefit">
+                            <i class="fas fa-clock"></i>
+                            <span>Respuesta rápida</span>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>100% Seguro</span>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-users"></i>
+                            <span>Atención personalizada</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contacto-form">
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nombre">Nombre Completo *</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="telefono">Teléfono *</label>
+                                <input type="tel" id="telefono" name="telefono" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="fecha">Fecha del Evento</label>
+                                <input type="date" id="fecha" name="fecha">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="servicio">Tipo de Servicio *</label>
+                            <select id="servicio" name="servicio" required>
+                                <option value="">Selecciona un servicio</option>
+                                <option value="basico">Paquete Básico - Casa de Brinco</option>
+                                <option value="premium">Paquete Premium - Casa + Castillo</option>
+                                <option value="fiesta">Paquete Fiesta - Múltiples Juegos</option>
+                                <option value="otro">Otro / Consulta Personalizada</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="direccion">Dirección del Evento</label>
+                            <input type="text" id="direccion" name="direccion" placeholder="Comuna, dirección aproximada">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Detalles del Evento *</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos sobre tu evento: ¿Cuántos niños? ¿Qué edad? ¿Cuánto tiempo necesitas el servicio? ¿Hay algún requerimiento especial?" required></textarea>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" id="terminos" name="terminos" required>
+                            <label for="terminos">Acepto los términos y condiciones y la política de privacidad</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large">Enviar Consulta</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preguntas Frecuentes -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>¿Cuál es el tiempo mínimo de alquiler?</h3>
+                    <p>El alquiler mínimo es de 4 horas para cualquier paquete.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>¿Incluyen entrega e instalación?</h3>
+                    <p>Sí, todos nuestros paquetes incluyen entrega, instalación y desmontaje profesional.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>¿Qué áreas cubren?</h3>
+                    <p>Cubrimos Santiago y alrededores. Consultanos para zonas específicas.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>¿Necesito seguro adicional?</h3>
+                    <p>Todos nuestros equipos están asegurados. No necesitas seguro adicional.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>¿Puedo cancelar la reserva?</h3>
+                    <p>Sí, con al menos 48 horas de anticipación sin costo. Menos tiempo tiene penalización.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>¿Trabajan fines de semana?</h3>
+                    <p>Sí, atendemos todos los días de la semana incluyendo fines de semana y feriados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mapa -->
+    <section id="ubicacion" class="mapa-section">
+        <div class="container">
+            <h2>Nuestra Ubicación</h2>
+            <div class="mapa-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.9999999999995!2d-70.648!3d-33.448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDI2JzQ4LjAiUyA3MMKwMzgnNDguMCJX!5e0!3m2!1ses!2scl!4v1635000000000!5m2!1ses!2scl"
+                    width="100%"
+                    height="400"
+                    style="border:0; border-radius: 10px;"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-home"></i>
+                    <span>Casas de Brinco</span>
+                </div>
+                <div class="footer-links">
+                    <a href="../index.html">Inicio</a>
+                    <a href="#servicios">Servicios</a>
+                    <a href="#galeria">Galería</a>
+                    <a href="#precios">Precios</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Casas de Brinco. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
